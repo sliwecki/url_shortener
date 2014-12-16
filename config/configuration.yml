@@ -1,0 +1,6 @@
+production:
+  remote_host: ''
+development:
+  remote_host: 'http://localhost:3000/'
+test:
+  remote_host: 'http://localhost:3000/'

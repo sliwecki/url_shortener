@@ -1,0 +1,12 @@
+<%= form_for @form, as: :form_data, url: home_path do |form| %>
+  
+  <% if @form.errors.any? %>
+	<div style="error-container">
+	  <p class='error-message'><%=  @form.errors.full_messages %></p>
+	</div>
+  <% end %>
+
+  <%= form.label :url, 'Podaj url' %>
+  <%= form.text_field :url, placeholder: 'http://www.google.pl' %>
+  <%= form.button 'Skracaj!' %>
+<% end %>
